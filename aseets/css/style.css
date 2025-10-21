@@ -1,0 +1,184 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        nav {
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 41%, rgba(1, 195, 244, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            display: grid;
+            grid-template-columns: 244px 1fr 200px;
+            gap: 7rem;
+        }
+        
+        .logo {
+            color: white;
+            padding: 2rem;
+            font-size: larger;
+        }
+        
+        .logo h2 span {
+            color: rgb(226, 9, 226);
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        
+        .links>li {
+            list-style: none;
+        }
+        
+        .links {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+            margin-left: 8rem;
+            list-style: none;
+        }
+        
+        .links>li>a {
+            color: white;
+            text-decoration: none;
+            transition: all ease 0.3s;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .links>li>a:hover {
+            transform: rotate(355deg);
+        }
+        
+        .btn-container {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.2rem;
+            margin-right: 8rem;
+        }
+        
+        .btn {
+            padding: 0.5rem 0.5rem;
+            border: none;
+            border-radius: 0.4rem;
+            font-weight: bold;
+            font-size: large;
+            transition: all ease 0.3s;
+        }
+        
+        .btn-secondary {
+            background-color: purple;
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: scale(1.2);
+        }
+        
+        .hero-section {
+            position: relative;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 41%, rgba(1, 195, 244, 1) 100%);
+            height: 84vh;
+            overflow: hidden;
+        }
+        
+        .custom-shape-divider-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        
+        .custom-shape-divider-bottomsvg {
+            position: relative;
+            display: block;
+            width: calc(219% + 1.3px);
+            height: 273px;
+        }
+        
+        .custom-shape-divider-bottom .shape-fill {
+            fill: #ffffff;
+        }
+        
+        .text-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .text {
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 4rem;
+        }
+        
+        .text h2 {
+            font-size: 3rem;
+            font-family: "Bebas Neue", sans-serif;
+        }
+        
+        .text p {
+            width: 34vw;
+            padding: 2rem;
+            margin-left: 2rem;
+            font-family: "Pacifico", cursive;
+        }
+        
+        .services {
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        h2 {
+            text-align: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 3rem;
+            color: #7b17bc;
+        }
+        
+        .services-1 {
+            background-color: #fff;
+            width: 25vw;
+            height: auto;
+            padding: 1.5rem;
+            box-shadow: 0px 3px 16px 2px #7b17bc;
+            border-radius: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-left: 3rem;
+        }
+        
+        .services-1:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 20px 4px rgb(94, 18, 145);
+        }
+        
+        .services-1 img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        
+        .services-1 h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.3rem;
+            color: #7b17bc;
+            font-family: "Bebas Neue", sans-serif;
+        }
+        
+        .services-1 p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #444;
+        }
